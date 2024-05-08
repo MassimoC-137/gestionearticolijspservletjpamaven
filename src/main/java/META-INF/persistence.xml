@@ -5,11 +5,11 @@
         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
         version="2.2">
 	<persistence-unit name="gestionearticolijspservletjpamaven_unit" transaction-type="RESOURCE_LOCAL">
-		<class>it.prova.gestionearticolijspservletjpamaven.model.Articolo</class>
+		<class>it.prova.gestioneprodottijspservletjpamaven.model.Prodotto</class>
 		<properties>
 			<!-- setup con MySql -->
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/gestionearticolijspservletjpamaven?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/gestioneprodottijspservletjpamaven?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true"/>
 			<property name="javax.persistence.jdbc.user" value="root"/>
 			<property name="javax.persistence.jdbc.password" value="rootroot"/>
 			
