@@ -4,7 +4,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
         version="2.2">
-	<persistence-unit name="gestionearticolijspservletjpamaven_unit" transaction-type="RESOURCE_LOCAL">
+	<persistence-unit name="gestioneprodottijspservletjpamaven_unit" transaction-type="RESOURCE_LOCAL">
 		<class>it.prova.gestioneprodottijspservletjpamaven.model.Prodotto</class>
 		<properties>
 			<!-- setup con MySql -->
