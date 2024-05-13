@@ -17,6 +17,6 @@ public interface ProdottoService {
 	
 	public void aggiorna(Prodotto input) throws Exception; 
 	
-	public void rimuovi(Prodotto input) throws Exception; 
+	public void rimuovi(Long id) throws Exception; 
 
 }

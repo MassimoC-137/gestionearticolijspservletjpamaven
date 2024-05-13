@@ -37,11 +37,11 @@ public class ProdottoDAOImpl implements ProdottoDAO{
 	}
 
 	@Override
-	public void delete(Prodotto input) throws Exception {
-		if (input == null) {
+	public void delete(Long id) throws Exception {
+		if (id == null) {
 			throw new Exception("Errore valore input.");
 		}
-		entityManager.remove(entityManager.merge(input));
+		entityManager.remove(entityManager.merge(id));
 	}
 
 	@Override

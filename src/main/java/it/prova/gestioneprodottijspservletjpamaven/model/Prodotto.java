@@ -43,6 +43,11 @@ public class Prodotto {
 		
 	}
 	
+	public Prodotto(String codice, String descrizione) {
+		this.codice = codice; 
+		this.descrizione = descrizione; 
+	}
+	
 	public Prodotto(String codice, Categoria categoria, String descrizione, float prezzo, LocalDate dataArrivo, Integer disponibilita) {
 		this.codice = codice; 
 		this.categoria = categoria; 

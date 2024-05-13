@@ -83,12 +83,12 @@ public class ProdottoServiceImpl implements ProdottoService{
 	}
 
 	@Override
-	public void rimuovi(Prodotto input) throws Exception {
+	public void rimuovi(Long id) throws Exception {
 		EntityManager entityManager = LocalEntityManagerFactoryListener.getEntityManager();
 		try {
 			entityManager.getTransaction().begin();
 			prodottoDao.setEntityManager(entityManager);
-			prodottoDao.delete(input);
+			prodottoDao.delete(id);
 			entityManager.getTransaction().commit();
 		} catch (Exception e){
 			entityManager.getTransaction().rollback();
